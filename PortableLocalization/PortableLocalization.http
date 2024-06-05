@@ -1,0 +1,11 @@
+@PortableLocalization_HostAddress = https://localhost:7000
+
+GET {{PortableLocalization_HostAddress}}/api/Index?culture=en-US&ui-culture=en-US
+Accept: application/json
+
+###
+
+GET {{PortableLocalization_HostAddress}}/api/Index
+Accept: application/json
+
+###

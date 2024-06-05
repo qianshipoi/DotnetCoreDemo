@@ -1,0 +1,28 @@
+@ORM_SqlSugar_HostAddress = https://localhost:7066
+
+GET {{ORM_SqlSugar_HostAddress}}/api/todo
+Accept: application/json
+
+###
+
+POST {{ORM_SqlSugar_HostAddress}}/api/todo
+Content-Type: application/json
+{
+  "title": "title1",
+  "isCompleted": false
+}
+
+###
+
+PUT {{ORM_SqlSugar_HostAddress}}/api/todo/3
+Content-Type: application/json
+{
+  "title": "title111",
+  "isCompleted": true
+}
+
+###
+
+DELETE {{ORM_SqlSugar_HostAddress}}/api/todo/1
+
+
